@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+lib/__test__
+_book
+coverage
+stats.json
+dist
+test-report.xml
+e2e-results.xml
+unit-results.xml
+lerna-debug.log
+packages/searchkit/release
+yarn-error.log
+package-lock.json
+.DS_Store
