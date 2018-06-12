@@ -55,6 +55,7 @@ export class SearchkitManager {
   loading:boolean
   initialLoading:boolean
   error:any
+  signout:any
   results:any
   VERSION = VERSION
   static VERSION = VERSION
@@ -238,6 +239,7 @@ export class SearchkitManager {
     this.compareResults(this.results, results)
     this.results = results
     this.error = null
+    this.signout = null
     this.accessors.setResults(results)
     this.onResponseChange()
     this.resultsEmitter.trigger(this.results)
@@ -297,6 +299,7 @@ export class SearchkitManager {
     this.error = error
     console.error(this.error)
     this.results = null
+    this.signout = true
     this.accessors.setResults(null)
     this.onResponseChange()
   }

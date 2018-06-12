@@ -42,6 +42,7 @@ export declare class SearchkitManager {
     loading: boolean;
     initialLoading: boolean;
     error: any;
+    signout: any;
     results: any;
     VERSION: string;
     static VERSION: string;
